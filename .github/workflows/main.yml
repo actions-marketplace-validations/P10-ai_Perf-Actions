@@ -19,10 +19,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          repository: P10-ai/Perf-Engine
-          branch: main
-        env: 
-          SSH_PRIVATE_KEY: ${{ secrets.PERFAI_ACCESS }}
+          repository: P10-ai/Perf-Engine          
+          token: ${{ secrets.PERFAI_ACCESS }}
+          ref: main
+#        env: 
+#          SSH_PRIVATE_KEY: ${{ secrets.PERFAI_ACCESS }}
 
       - name: Log in to the Container registry
         uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
