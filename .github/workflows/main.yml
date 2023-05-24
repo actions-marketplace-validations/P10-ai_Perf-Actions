@@ -21,7 +21,7 @@ jobs:
         with:
           repository: P10-ai/Perf-Engine
           ref: main
-        env: 
+        env: |
           SSH_PRIVATE_KEY: ${{ secrets.PERFAI_ACCESS }}
 
       - name: Log in to the Container registry
