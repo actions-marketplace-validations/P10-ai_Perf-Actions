@@ -16,16 +16,6 @@ jobs:
       packages: write
 
     steps:
-      - name: Configure SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "$PRIVATE_KEY" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts
-        env:
-          PRIVATE_KEY: ${{ secrets.PERFAI_DEPLOY_KEY_PRIVATE }}
-      
-      
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
