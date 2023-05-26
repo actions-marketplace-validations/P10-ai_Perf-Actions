@@ -8,5 +8,5 @@ inputs:
     default_value: 
 runs:
   using: 'docker'
-  image: docker://docker.pkg.github.com/P10-ai/Perf-Engine/myimage:latest
+  image: docker://docker.pkg.github.com/P10-ai/Perf-Engine/perf-engine:latest
   
