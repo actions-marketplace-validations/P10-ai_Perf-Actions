@@ -3,7 +3,7 @@ description: A GitHub Action that performs a specific task using a Docker Image
 author: P10-ai
 inputs:
   input_name:
-    description: OAS URL
+    description: Open API Spec File
     required: true
     default_value: 
 runs:
