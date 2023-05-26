@@ -7,5 +7,6 @@ inputs:
     required: true
     default_value: 
 runs:
-  using: 
-  image: 
+  using: 'docker'
+  image: docker://docker.pkg.github.com/P10-ai/Perf-Engine/myimage:latest
+  
